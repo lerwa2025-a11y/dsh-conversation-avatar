@@ -1,0 +1,4 @@
+# dsh-conversation-avatar — 挂载声明
+- insert:
+    - id: dsh-conversation-avatar
+      name: 'dsh-conversation-avatar'

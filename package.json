@@ -1,0 +1,50 @@
+{
+  "name": "dsh-conversation-avatar",
+  "version": "0.1.0",
+  "description": "头像和气泡框：给会话双方各配一张头像，消息左右分列（像好友聊天），可导入图片、调大小与圆角，并给 AI 回复加气泡框。从壁纸引擎插件的「自定义会话头像」扩展移植而来，只保留头像扩展本身。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "avatar",
+    "bubble",
+    "ui"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerwa2025-a11y/dsh-conversation-avatar.git"
+  },
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
