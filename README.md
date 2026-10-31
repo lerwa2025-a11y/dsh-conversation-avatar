@@ -1,5 +1,17 @@
 # 头像和气泡框（dsh-conversation-avatar）
 
+> ## ⚠️ 本仓库已归档，项目已更名
+>
+> 新版在 **<https://github.com/lerwa2025-a11y/dsh-avatar-font>**（npm 包名 `dsh-avatar-font`）。
+>
+> 新版本 **移除了「AI 回复气泡框」整套功能**，改为「头像 + 字体」，两个功能可各自独立启停。
+> npm 上本包已标记为 deprecated，`dsh plugin add dsh-conversation-avatar` 仍能装到 1.0.0，
+> 但不会再更新。请改用 `dsh plugin add dsh-avatar-font`。
+>
+> 升级方式：把 `$DSH_HOME/dsh-conversation-avatar/` 整个目录改名为
+> `$DSH_HOME/dsh-avatar-font/`，头像图片与设置（尺寸、圆角、跟随开关、字体）全部保留，
+> 只有气泡框相关的键会被丢弃。
+
 给 DSH 会话双方各配一张头像，消息左右分列（像好友聊天），并给 AI 的最终回复加气泡框。
 
 从 **壁纸引擎插件（dsh-plugin-wallpaper-engine）** 的「自定义会话头像」扩展移植而来，

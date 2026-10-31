@@ -5,7 +5,7 @@
  */
 import { readFileSync } from 'node:fs';
 
-const f = 'S:/Agent自定义目录/dsh-home/plugins-src/dsh-conversation-avatar/lib/client.js';
+const f = 'E:/AGENT/DSH/dsh-home/plugins-src/dsh-conversation-avatar/lib/client.js';
 const src = readFileSync(f, 'utf8');
 
 const start = src.indexOf('const STYLES = `');
